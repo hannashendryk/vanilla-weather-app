@@ -10,22 +10,25 @@
 </head>
 <body>
     <div class="container">
+        <div class="weather-app">
         <div class="row">
             <div class="col-6">
-    <h1>
-        New York
-    </h1>
-    <ul>
-        <li>
-            Tuesday 06:30, clear sky
-        </li>
-        <li>
-            Humidity: 84%, Wind: 2.06km/h
-        </li>
-    </ul>
+              <h1>
+                New York
+              </h1>
+            <ul>
+               <li>
+                  Tuesday 06:30, clear sky
+                </li>
+                <li>
+                  Humidity: <span class="humidity">84%</span>, Wind: <span class="wind">2.06km/h</span>
+                </li>
+            </ul>
+            
             </div>
             <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear sky">
+                
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" width="60" alt="Clear sky">
             <span class="temperature">
                 21 
             </span>
@@ -34,10 +37,18 @@
             </span>
 </div>
     </div>
+    
+    
+
+</div>
+
     <small>
         <a href="https://github.com/hannashendryk/vanilla-weather-app" target="_blank">Open-source code</a> by Hanna Shendryk
     </small>
+    
 </div>
     <script src="src/app.js"></script>
 </body>
 </html>
+
+
