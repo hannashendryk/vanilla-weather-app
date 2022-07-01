@@ -26,17 +26,19 @@ img {
     left: -10px;
 }
 
-small {
+form {
+    padding: 20px 20px 40px 20px;
 
 }
 
 .container {
-    max-width: 650px;
+    max-width: 700px;
     margin: 50px auto;
 }
 
 .weather-app {
-max-width: 600px;
+max-width: 700px;
+padding: 40px;
 margin: 50px auto 10px;
 border: 1px solid #fff;
 border-radius: 10px;
@@ -48,7 +50,7 @@ background-color: #fff;
 }
 
 .temperature {
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 550;
 }
 
@@ -62,4 +64,17 @@ background-color: #fff;
 
 .wind {
     text-transform: lowercase;
+}
+
+.form-control {
+    background-color: #F9F7FE;
+    padding: 15px 20px;
+    border: 1px solid #fff;
+}
+
+.btn {
+    padding: 15px;
+    background-color: #885DF1;
+    border: 1px solid #fff;
+    font-weight: bold;
 }

@@ -15,10 +15,26 @@ function displayTemperature (response) {
    iconElement.setAttribute ("alt", response.data.weather[0].description);
 }
 
-let apiKey = "d0e8d1110078fa650d02bce7e788ef46";
-let city = "Lisbon"
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
-axios.get(apiUrl).then(displayTemperature);
+
+
+
+
+function search (city) {
+   let apiKey = "d0e8d1110078fa650d02bce7e788ef46";
+   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+   axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCity (event) {
+   event.preventDefault();
+   let inputCityElement = document.querySelector("#input-city");
+   search(inputCityElement.value);
+}
+
+search ("New York");
+
+let form = document.querySelector("form");
+form.addEventListener("submit", getCity);
 
 let now = new Date();
 let dateElement = document.querySelector("#date");
