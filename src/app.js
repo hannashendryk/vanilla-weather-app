@@ -12,7 +12,24 @@ function displayTemperature (response) {
 }
 
 let apiKey = "d0e8d1110078fa650d02bce7e788ef46";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`
-console.log (apiUrl)
+let city = "Kyiv"
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 axios.get(apiUrl).then(displayTemperature);
+
+let now = new Date();
+let dateElement = document.querySelector("#date");
+
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let day = days[now.getDay()];
+
+let hours = now.getHours();
+if (hours < 10) {
+   hours = `0${hours}`;
+}
+let minutes = now.getMinutes();
+if (minutes < 10) {
+   minutes = `0${minutes}`;
+}
+
+dateElement.innerHTML = `${day}, ${hours}:${minutes}`;
 
