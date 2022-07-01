@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <link rel="stylesheet" href="src/style.css">
 </head>
@@ -13,15 +14,15 @@
         <div class="weather-app">
         <div class="row">
             <div class="col-6">
-              <h1>
-                New York
+              <h1 id="city">
+                
               </h1>
             <ul>
                <li>
-                  Tuesday 06:30, clear sky
+                  Tuesday 06:30, <span id="description"></span>
                 </li>
                 <li>
-                  Humidity: <span class="humidity">84%</span>, Wind: <span class="wind">2.06km/h</span>
+                  Humidity: <span class="humidity" id="humidity"></span>, Wind: <span id="wind"></span><span class="wind"> km/h</span>
                 </li>
             </ul>
             
@@ -29,8 +30,8 @@
             <div class="col-6">
                 
             <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" width="60" alt="Clear sky">
-            <span class="temperature">
-                21 
+            <span class="temperature" id="temperature">
+                 
             </span>
             <span class="unit">
                 °C|°F

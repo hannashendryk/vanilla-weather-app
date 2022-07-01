@@ -16,6 +16,10 @@ ul {
     padding-left: 20px;
 }
 
+li {
+    text-transform: capitalize;
+}
+
 img {
     position: relative;
     top: -30px;
@@ -45,7 +49,7 @@ background-color: #fff;
 
 .temperature {
     font-size: 100px;
-    font-weight: 700;
+    font-weight: 550;
 }
 
 .unit {
@@ -53,5 +57,9 @@ background-color: #fff;
     font-weight: 400;
     position: relative;
     top: -50px;
-    left: -30px;
+    left: -10px;
+}
+
+.wind {
+    text-transform: lowercase;
 }
