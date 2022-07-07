@@ -33,6 +33,7 @@ form {
 
 a {
     text-decoration: none;
+    color: #885DF1;
 }
 
 .container {
@@ -94,10 +95,8 @@ background-color: #fff;
 .forecast-date {
     color: #A9A6B3;
     font-size: 16px;
-    ;
     
 }
-
 
 
 .forecast-tempearture-max {
